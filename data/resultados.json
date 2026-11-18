@@ -1,0 +1,86 @@
+[
+  {
+    "fecha": "2026-11-17T20:17:24",
+    "cliente": "andres",
+    "sabor": "amargo",
+    "temperatura": "caliente",
+    "presupuesto": "S/ 80.00",
+    "modo": "combo",
+    "franja": "manana",
+    "franja_automatica": false,
+    "total_opciones": 5,
+    "destacada": "Cafe americano + Alfajor (S/ 11.50, exacta)",
+    "opciones": [
+      {
+        "bebida": "americano",
+        "acompanamiento": "galleta_avena",
+        "total": 1050,
+        "tipo": "exacta",
+        "maridaje": "neutro"
+      },
+      {
+        "bebida": "americano",
+        "acompanamiento": "alfajor",
+        "total": 1150,
+        "tipo": "exacta",
+        "maridaje": "contraste"
+      },
+      {
+        "bebida": "americano",
+        "acompanamiento": "croissant",
+        "total": 1400,
+        "tipo": "exacta",
+        "maridaje": "neutro"
+      },
+      {
+        "bebida": "espresso",
+        "acompanamiento": "brownie",
+        "total": 1400,
+        "tipo": "exacta",
+        "maridaje": "contraste"
+      },
+      {
+        "bebida": "espresso",
+        "acompanamiento": "croissant",
+        "total": 1500,
+        "tipo": "exacta",
+        "maridaje": "neutro"
+      }
+    ]
+  },
+  {
+    "fecha": "2026-11-17T21:11:43",
+    "cliente": "andres",
+    "sabor": "amargo",
+    "temperatura": "caliente",
+    "presupuesto": "S/ 20.00",
+    "modo": "combo",
+    "franja": "noche",
+    "franja_automatica": true,
+    "total_opciones": 3,
+    "destacada": "Cafe americano + Alfajor (S/ 11.50, exacta)",
+    "opciones": [
+      {
+        "bebida": "americano",
+        "acompanamiento": "galleta_avena",
+        "total": 1050,
+        "tipo": "exacta",
+        "maridaje": "neutro"
+      },
+      {
+        "bebida": "americano",
+        "acompanamiento": "alfajor",
+        "total": 1150,
+        "tipo": "exacta",
+        "maridaje": "contraste"
+      },
+      {
+        "bebida": "americano",
+        "acompanamiento": "croissant",
+        "total": 1400,
+        "tipo": "exacta",
+        "maridaje": "neutro"
+      }
+    ]
+  }
+]

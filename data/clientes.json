@@ -1,0 +1,32 @@
+[
+  {
+    "nombre": "Ana",
+    "sabor": "dulce",
+    "temperatura": "fria"
+  },
+  {
+    "nombre": "Luis",
+    "sabor": "amargo",
+    "temperatura": "caliente"
+  },
+  {
+    "nombre": "Rosa",
+    "sabor": "suave",
+    "temperatura": "caliente"
+  },
+  {
+    "nombre": "Carlos",
+    "sabor": "amargo",
+    "temperatura": "fria"
+  },
+  {
+    "nombre": "Sofia",
+    "sabor": "suave",
+    "temperatura": "fria"
+  },
+  {
+    "nombre": "andres",
+    "sabor": "amargo",
+    "temperatura": "caliente"
+  }
+]

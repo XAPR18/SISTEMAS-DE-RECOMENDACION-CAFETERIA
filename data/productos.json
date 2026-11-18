@@ -1,0 +1,33 @@
+{
+  "bebidas": [
+    {"id": "espresso", "nombre": "Espresso", "sabor": "amargo", "temperatura": "caliente", "precio": "8.00",
+     "franjas": ["manana", "tarde"], "acompanamientos": ["croissant", "brownie"]},
+    {"id": "americano", "nombre": "Cafe americano", "sabor": "amargo", "temperatura": "caliente", "precio": "7.00",
+     "franjas": ["manana", "tarde", "noche"], "acompanamientos": ["croissant", "alfajor", "galleta_avena"]},
+    {"id": "cold_brew", "nombre": "Cold brew", "sabor": "amargo", "temperatura": "fria", "precio": "11.00",
+     "franjas": ["tarde", "noche"], "acompanamientos": ["brownie", "alfajor"]},
+    {"id": "capuchino", "nombre": "Capuchino", "sabor": "suave", "temperatura": "caliente", "precio": "10.00",
+     "franjas": ["manana", "tarde", "noche"], "acompanamientos": ["croissant", "galleta_avena"]},
+    {"id": "latte", "nombre": "Cafe latte", "sabor": "suave", "temperatura": "caliente", "precio": "9.50",
+     "franjas": ["manana", "tarde"], "acompanamientos": ["croissant", "galleta_avena", "brownie"]},
+    {"id": "chocolate_caliente", "nombre": "Chocolate caliente", "sabor": "dulce", "temperatura": "caliente", "precio": "9.00",
+     "franjas": ["tarde", "noche"], "acompanamientos": ["brownie", "alfajor"]},
+    {"id": "frappe_mocha", "nombre": "Frappe mocha", "sabor": "dulce", "temperatura": "fria", "precio": "12.50",
+     "franjas": ["tarde", "noche"], "acompanamientos": ["brownie", "alfajor"]},
+    {"id": "milkshake_vainilla", "nombre": "Milkshake de vainilla", "sabor": "dulce", "temperatura": "fria", "precio": "11.00",
+     "franjas": ["tarde"], "acompanamientos": ["alfajor", "galleta_avena"]},
+    {"id": "te_helado", "nombre": "Te helado de limon", "sabor": "citrico", "temperatura": "fria", "precio": "9.00",
+     "franjas": ["manana", "tarde"], "acompanamientos": ["croissant", "cheesecake_maracuya"]},
+    {"id": "limonada_frozen", "nombre": "Limonada frozen", "sabor": "citrico", "temperatura": "fria", "precio": "8.50",
+     "franjas": ["manana", "tarde"], "acompanamientos": ["cheesecake_maracuya", "galleta_avena"]},
+    {"id": "infusion_jengibre", "nombre": "Infusion de limon y jengibre", "sabor": "citrico", "temperatura": "caliente", "precio": "7.50",
+     "franjas": ["manana", "noche"], "acompanamientos": ["galleta_avena"]}
+  ],
+  "acompanamientos": [
+    {"id": "croissant", "nombre": "Croissant", "sabor": "suave", "precio": "7.00"},
+    {"id": "brownie", "nombre": "Brownie", "sabor": "dulce", "precio": "6.00"},
+    {"id": "alfajor", "nombre": "Alfajor", "sabor": "dulce", "precio": "4.50"},
+    {"id": "galleta_avena", "nombre": "Galleta de avena", "sabor": "suave", "precio": "3.50"},
+    {"id": "cheesecake_maracuya", "nombre": "Cheesecake de maracuya", "sabor": "citrico", "precio": "9.00"}
+  ]
+}

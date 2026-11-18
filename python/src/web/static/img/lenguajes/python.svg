@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Python">
+  <title>Python</title>
+  <defs>
+    <linearGradient id="pyAzul" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5a9fd4"/><stop offset="1" stop-color="#306998"/>
+    </linearGradient>
+    <linearGradient id="pyOro" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffe873"/><stop offset="1" stop-color="#ffd43b"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#pyAzul)" d="M31.7 4C19.9 4 20.6 9.1 20.6 9.1v5.3h11.3V16H15.9S8.4 15.1 8.4 27s6.6 11.5 6.6 11.5h3.9v-5.5s-.2-6.6 6.5-6.6h11.1s6.3.1 6.3-6.1V10.4S43.7 4 31.7 4zm-6.2 3.6a2 2 0 1 1 0 4.1 2 2 0 0 1 0-4.1z"/>
+  <path fill="url(#pyOro)" d="M32.3 60c11.8 0 11.1-5.1 11.1-5.1v-5.3H32.1V48h16S55.6 48.9 55.6 37 49 25.5 49 25.5h-3.9V31s.2 6.6-6.5 6.6H27.5s-6.3-.1-6.3 6.1v10.2S20.3 60 32.3 60zm6.2-3.6a2 2 0 1 1 0-4.1 2 2 0 0 1 0 4.1z"/>
+</svg>

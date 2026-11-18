@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recomendador Café 14</title>
+  <link rel="icon" href="/img/lenguajes/prolog.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div class="cabecera__marca">
+      <img src="/img/cafe14-logo.svg" alt="Café 14" class="cabecera__logo">
+      <div>
+        <p class="cabecera__sobre">Sistema experto multilenguaje</p>
+        <h1>Recomendador de bebidas y combos</h1>
+      </div>
+    </div>
+    <div class="cabecera__lenguajes" aria-label="Tecnologías">
+      <span class="lenguaje"><img src="/img/lenguajes/python.svg" alt=""><em>integra</em></span>
+      <span class="lenguaje"><img src="/img/lenguajes/scala.svg" alt=""><em>procesa</em></span>
+      <span class="lenguaje"><img src="/img/lenguajes/prolog.svg" alt=""><em>infiere</em></span>
+    </div>
+  </header>
+
+  <nav class="pestanas" role="tablist">
+    <button class="pestana activa" data-vista="recomendar" role="tab">Recomendar</button>
+    <button class="pestana" data-vista="carta" role="tab">Carta</button>
+    <button class="pestana" data-vista="historial" role="tab">Historial</button>
+  </nav>
+
+  <main>
+    <!-- ======================= RECOMENDAR ======================= -->
+    <section class="vista" id="vista-recomendar">
+      <form class="pedido tarjeta" id="formulario" novalidate>
+        <h2>Tu pedido</h2>
+
+        <label class="campo">
+          <span class="campo__titulo">Perfil</span>
+          <select id="perfil"></select>
+        </label>
+        <label class="campo" id="campo-nombre" hidden>
+          <span class="campo__titulo">Tu nombre</span>
+          <input id="nombre" maxlength="60" autocomplete="off" placeholder="Ej.: Andrés">
+        </label>
+
+        <fieldset class="campo">
+          <legend class="campo__titulo">Sabor preferido</legend>
+          <div class="chips" id="sabores"></div>
+        </fieldset>
+
+        <fieldset class="campo">
+          <legend class="campo__titulo">Temperatura</legend>
+          <div class="chips chips--2" id="temperaturas"></div>
+        </fieldset>
+
+        <label class="campo">
+          <span class="campo__titulo">Presupuesto total</span>
+          <span class="dinero"><b>S/</b><input id="presupuesto" inputmode="decimal" value="20.00"></span>
+          <span class="rapidos" id="rapidos"></span>
+        </label>
+
+        <fieldset class="campo">
+          <legend class="campo__titulo">Pedido</legend>
+          <div class="chips chips--2" id="modos"></div>
+        </fieldset>
+
+        <fieldset class="campo">
+          <legend class="campo__titulo">Franja horaria</legend>
+          <div class="chips chips--4" id="franjas"></div>
+        </fieldset>
+
+        <label class="check"><input type="checkbox" id="guardar"> Guardar o actualizar el perfil</label>
+
+        <button type="submit" class="boton" id="boton">
+          <span class="boton__texto">Recomendar</span><span class="boton__giro" aria-hidden="true"></span>
+        </button>
+      </form>
+
+      <div class="resultado">
+        <ol class="flujo tarjeta" id="flujo" aria-label="Recorrido de la consulta entre lenguajes">
+          <li class="paso" data-paso="1"><span class="paso__logo"><img src="/img/lenguajes/python.svg" alt="Python"></span><span class="paso__verbo">Obtiene datos</span><span class="paso__ms"></span></li>
+          <li class="paso" data-paso="2"><span class="paso__logo"><img src="/img/lenguajes/scala.svg" alt="Scala"></span><span class="paso__verbo">Procesa</span><span class="paso__ms"></span></li>
+          <li class="paso" data-paso="3"><span class="paso__logo"><img src="/img/lenguajes/python.svg" alt="Python"></span><span class="paso__verbo">Envía</span><span class="paso__ms"></span></li>
+          <li class="paso" data-paso="4"><span class="paso__logo"><img src="/img/lenguajes/prolog.svg" alt="Prolog"></span><span class="paso__verbo">Infiere</span><span class="paso__ms"></span></li>
+          <li class="paso" data-paso="5"><span class="paso__logo"><img src="/img/lenguajes/python.svg" alt="Python"></span><span class="paso__verbo">Muestra</span><span class="paso__ms"></span></li>
+        </ol>
+
+        <div id="salida">
+          <div class="vacio tarjeta">
+            <img src="/img/productos/capuchino.jpg" alt="" class="vacio__foto">
+            <div>
+              <h2>¿Qué se te antoja hoy?</h2>
+              <p>Elige tu perfil, tu sabor y tu presupuesto. Python enviará tu pedido a Scala para calcular
+                 todas las opciones y Prolog decidirá cuáles te recomienda y por qué.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= CARTA ======================= -->
+    <section class="vista" id="vista-carta" hidden>
+      <div class="filtros" id="filtros-carta"></div>
+      <div class="rejilla" id="carta"></div>
+    </section>
+
+    <!-- ======================= HISTORIAL ======================= -->
+    <section class="vista" id="vista-historial" hidden>
+      <div class="tarjeta tabla-contenedor">
+        <table class="tabla">
+          <thead><tr><th>Fecha</th><th>Cliente</th><th>Pedido</th><th>Franja</th><th>Presupuesto</th><th>Opciones</th><th>Destacada</th></tr></thead>
+          <tbody id="historial"></tbody>
+        </table>
+      </div>
+      <p class="nota">Se guardan las últimas 200 consultas en <code>data/resultados.json</code>.</p>
+    </section>
+  </main>
+
+  <footer class="pie">
+    Proyecto de Lenguajes de Programación · Python integra, Scala procesa y Prolog infiere · No usa IA generativa
+  </footer>
+
+  <div class="aviso" id="aviso" role="alert" hidden></div>
+  <script src="/app.js"></script>
+</body>
+</html>

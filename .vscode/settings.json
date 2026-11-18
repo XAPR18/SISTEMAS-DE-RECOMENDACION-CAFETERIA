@@ -1,0 +1,7 @@
+{
+  "search.exclude": { "tools/**": true, "**/target/**": true },
+  "files.watcherExclude": {
+    "**/tools/**": true,
+    "**/target/**": true
+  }
+}

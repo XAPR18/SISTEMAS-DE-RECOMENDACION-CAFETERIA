@@ -1,0 +1,10 @@
+**/target/
+**/.bloop/
+**/.metals/
+.bsp/
+scala/project/metals.sbt
+scala/project/project/
+tools/
+__pycache__/
+*.pyc
+*.tmp
